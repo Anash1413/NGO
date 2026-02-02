@@ -1,0 +1,441 @@
+<!-- /project
+ ├── index.html
+ ├── css/
+ │   └── style.css
+ ├── js/
+ │   └── script.js
+ └── assets/
+     ├── hero.jpg   (placeholder)
+     └── logo.png   (placeholder)
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NGO Hero Layout</title>
+  <meta name="viewport" content="width=1440">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Content</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-logo">
+        <img src="assets/heart.webp" alt="Logo">
+      </div>
+
+      <div class="hero-nav-buttons">
+        <a class="lux-btn active" href="#">HOME</a>
+        <a class="lux-btn" href="#">Content</a>
+        <a class="lux-btn" href="#">Contact Us</a>
+      </div>
+
+      <h1>Cutting-Edge Medicine and<br>Advocacy</h1>
+
+      <p class="hero-subtitle">REGARDLESS OF ABILITY TO PAY</p>
+
+      <a href="#" class="donate-btn">
+        <span>Donate Now</span>
+      </a>
+    </div>
+    <img class="shape-1" src="assets/shape-1-botton-grey-1024x101.png" alt="">
+  </section>
+  <!-- STATS STRIP -->
+<section class="stats-strip">
+  <div class="stats-inner">
+
+    <div class="stats-image">
+      <img src="assets/group.jpg" alt="People">
+    </div>
+
+    <div class="stats-text">
+      2.5M+ Patients in Care | 50 Countries Served
+    </div>
+
+    <div class="stats-action">
+      <a href="#" class="stats-btn">All Causes</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="impact-section">
+  <div class="impact-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="impact-text">
+      <span class="impact-tag">Asian AIDS Action</span>
+
+      <h2 style="color: black;">
+        <span class="highlight">Your Support Can</span><br>
+        Save <em>Lives</em>
+      </h2>
+
+      <p class="impact-desc">
+        Your contribution helps us expand access to HIV care,
+        testing, treatment & prevention programs across the world.
+      </p>
+
+      <a href="#" class="impact-btn">Start Helping</a>
+    </div>
+
+    <!-- RIGHT VISUAL -->
+    <div class="impact-visual">
+      <img src="assets/mother-child.jpg" class="main-image" alt="">
+      
+      <div class="testimonial-card" id="testimonial">
+        <p>
+          Every act of care<br>
+          brings us closer to a<br>
+          healthier world.
+        </p>
+
+        <strong>Emily Johnson</strong>
+        <span>New York</span>
+
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <img src="assets/children.jpg" class="side-image" alt="">
+    </div>
+
+    <!-- RIGHT METRIC -->
+    <div class="impact-metric">
+      <h3>1,700+</h3>
+      <p>Healthcare<br>Centers</p>
+      <img src="assets/heart.webp" alt="">
+    </div>
+
+  </div>
+</section>
+
+<!-- WORLD CLASS CARE SECTION -->
+<section class="care-section">
+  <div class="care-panel">
+
+    <div class="care-content">
+      <img src="assets/logoS.png" alt="Asian AIDS Action" class="care-logo">
+
+      <h2>
+        World-Class HIV<br>
+        & Primary Care
+      </h2>
+
+      <p style="color: wh;">
+        Asian AIDS Action provides life-saving HIV testing,
+        treatment, prevention tools, and essential healthcare
+        support for millions worldwide.
+      </p>
+
+      <a href="#" class="care-btn">Learn More</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- DONATION + SERVICES SECTION -->
+<section class="donation-services">
+
+  <!-- PARALLAX BG -->
+  <div class="parallax-bg" id="parallaxBg"></div>
+
+  <div class="ds-container">
+
+    <!-- FORM CARD -->
+    <div class="donation-card">
+      <span class="ds-tag">Asian AIDS Action Global Health</span>
+
+      <h3>Make a Difference<br>Today</h3>
+
+      <p>
+        Your generosity expands access to HIV testing,
+        treatment & prevention programs worldwide.
+      </p>
+
+      <form>
+        <div class="row">
+          <input type="text" placeholder="First Name">
+          <input type="text" placeholder="Last Name">
+        </div>
+
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <!-- SERVICES LIST -->
+    <div class="services-list">
+      <h2>Asian AIDS<br>Action services</h2>
+
+      <ul>
+        <li><span>HIV & STD Testing</span><span class="arrow">›</span></li>
+        <li><span>HIV Treatment & Care</span><span class="arrow">›</span></li>
+        <li><span>Pharmacy Services</span><span class="arrow">›</span></li>
+        <li><span>Healthcare Centers</span><span class="arrow">›</span></li>
+        <li><span>Wellness & Prevention</span><span class="arrow">›</span></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+<section class="specialty-section">
+
+  <div class="specialty-wrapper">
+
+    <!-- LEFT CONTENT -->
+    <div class="specialty-content">
+      <h2>Specialty<br>Healthcare At<br>Its Finest</h2>
+
+      <p>
+        At Asian AIDS Action Healthcare Centers, we ensure our
+        clients can access the specialists and treatments they
+        need to live a happy, healthy life.
+      </p>
+
+      <a href="#" class="read-btn">Read All</a>
+    </div>
+
+    <!-- RIGHT IMAGES -->
+    <div class="specialty-images">
+
+      <!-- MOVING IMAGE 1 -->
+      <img src="assets/mother-baby.jpg"
+           class="move-up"
+           alt="Mother and baby">
+
+      <!-- MOVING IMAGE 2 -->
+      <img src="assets/man.jpg"
+           class="move-up"
+           alt="Man portrait">
+
+      <!-- STATIC IMAGE -->
+      <img src="assets/nurse.jpg"
+           class="static-img"
+           alt="Healthcare worker">
+
+    </div>
+
+  </div>
+</section>
+
+<section style="color: black;" class="aaw-section">
+
+  <div class="aaw-container">
+
+    <!-- HEADER -->
+    <div class="aaw-header">
+      <span class="aaw-tag">Asian AIDS Action</span>
+      <h2>
+        Asian AIDS Action<br>
+        Around <span>The World</span>
+      </h2>
+    </div>
+
+    <!-- TIMELINE -->
+   <section class="bodyyy">
+
+    <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item item-bottom item-01">
+            <div class="number">01</div>
+            <div class="content-card">
+              <img src="./assets/doctor.jpg" alt="Doctor">
+                <h3>Advocacy & Public Health Leadership</h3>
+                <p>Asian AIDS Action fights for affordable medications and policies that put public health first through global advocacy and evidence-based initiatives.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item item-top item-02">
+            <div class="content-card">
+                <img src="./assets/stethoscope.jpg" alt="Doctor">
+                <h3>Global Health Services</h3>
+                <p>Asian AIDS Action provides high-quality HIV care, testing, and prevention services to communities worldwide.</p>
+            </div>
+            <div class="number">02</div>
+        </div>
+
+        <div class="timeline-item item-bottom item-03">
+            <div class="number">03</div>
+            <div class="content-card">
+                <img src="./assets/treatment.jpg" alt="Stethoscope">
+                <h3>Strengthening Global Health Systems</h3>
+                <p>Through the Asian AIDS Action Global Public Health Institute, we support research and policies that build stronger healthcare.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item item-top item-04">
+            <div class="content-card">
+                <img src="./assets/community.jpg" alt="Medical Care">
+                <h3>Expanding Access to Treatment</h3>
+                <p>We work with local partners to increase access to HIV treatment and essential medical care across 50+ countries.</p>
+            </div>
+            <div class="number">04</div>
+        </div>
+
+    </div>
+
+</section>
+
+  </div>
+
+</section>
+
+<section class="bdy">
+
+    <section class="container">
+        <div class="content-column">
+            <h1>Who we <span class="accent">Are</span></h1>
+            <p>
+                The Los Angeles-based AIDS Healthcare Foundation (Asian AIDS Action) is a global nonprofit organization providing cutting-edge medicine and advocacy to millions worldwide. We are currently the largest provider of HIV/AIDS medical care in the world.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="image-column">
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Doctor examining patient">
+                
+                <div class="vertical-badge">
+                    <div class="badge-icon">
+                        <span class="icon-medical">+</span> </div>
+                    <span class="badge-text">Medical Care</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</section>
+
+<section class="testimonial-section">
+
+  <div class="testimonial-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="testimonial-left">
+      <p style="color: white;" class="quote">
+        Helping others<br>
+        is the most<br>
+        rewarding<br>
+        feeling
+      </p>
+
+      <div class="arrow left">‹</div>
+      <div class="arrow right">›</div>
+
+      <div class="author">
+        <img src="assets/avatar.jpg" alt="Michael Stevens">
+        <strong>Michael Stevens</strong>
+        <span>New York</span>
+      </div>
+
+      <div class="dots">
+        <span></span>
+        <span class="active"></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- RIGHT IMAGES -->
+    <div class="testimonial-right">
+
+      <!-- LEFT COLUMN (MOVES UP) -->
+      <div class="img-col move-up">
+        <img src="assets/img-1.jpg" alt="">
+        <img src="assets/img-2.jpg" alt="">
+      </div>
+
+      <!-- RIGHT COLUMN (MOVES DOWN) -->
+      <div class="img-col move-down">
+        <img src="assets/img-3.jpg" alt="">
+        <img src="assets/img-4.jpg" alt="">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- A  N  A  S H'S     L A N D     D O N ' T   T O U C H'-->
+
+
+
+   <!-- NEWS ROOM -->
+    <section class="news-room-section">
+        <h5 class="news-label">AidsHealth</h5>
+        <h2 class="news-title">Asian AIDS Action <span class="highlight">News Room</span></h2>
+        <div class="blog-grid">
+            <article class="blog-item">
+                <img src="https://shop.wealthsoiil.com/wp-content/uploads/2025/12/image-1-1.webp" alt="News 1">
+                <div class="blog-overlay"></div>
+                <div class="blog-text">
+                    <div class="blog-date">NOV / 2025</div>
+                    <div class="blog-title">Asian AIDS Action CELEBRATES LEGACY OF LGBTQ+ PIONEER</div>
+                </div>
+            </article>
+            <article class="blog-item">
+                <img src="https://shop.wealthsoiil.com/wp-content/uploads/2025/12/image-3.webp" alt="News 2">
+                <div class="blog-overlay"></div>
+                <div class="blog-text">
+                    <div class="blog-date">NOV / 2025</div>
+                    <div class="blog-title">I AM Asian AIDS Action – A SOCIAL WORKER'S MISSION</div>
+                </div>
+            </article>
+            <article class="blog-item">
+                <img src="https://shop.wealthsoiil.com/wp-content/uploads/2025/12/image-2.webp" alt="News 3">
+                <div class="blog-overlay"></div>
+                <div class="blog-text">
+                    <div class="blog-date">NOV / 2025</div>
+                    <div class="blog-title">I AM Asian AIDS Action – GUIDED BY COMPASSION</div>
+                </div>
+            </article>
+            <article class="blog-item blog-item-large">
+                <img src="https://shop.wealthsoiil.com/wp-content/uploads/2025/12/image-4.webp" alt="News 4">
+                <div class="blog-overlay"></div>
+                <div class="blog-text">
+                    <div class="blog-date">NOV / 2025</div>
+                    <div class="blog-title">ADVOCATES CALL ON GOVERNOR TO BACKFILL SNAP CUTS</div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="site-footer" class="site-footer">
+        <p>&copy; All rights reserved</p>
+    </footer>
+
+
+
+<script src="/assets/js/script.js"></script>
+</body>
+</html>

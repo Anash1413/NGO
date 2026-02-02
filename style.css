@@ -1,0 +1,1324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3efec;
+   background-image: 
+    url("https://media.istockphoto.com/vectors/highly-detailed-world-map-vector-outline-illustration-faded-gray-vector-id954961932?k=20&m=954961932&s=170667a&w=0&h=W_wy1_vzRX7E1P9GxlkIFdcMh1vA2ztN5S3WH0xgmII=");
+}
+
+/* ================= HEADER ================= */
+
+.site-header {
+  width: 100%;
+  height: 70px;
+  background: #ffffff;
+}
+
+.nav-container {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e04558;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  position: relative;
+  height: 170vh;
+  background: url("assets/hero.jpg") center/cover no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 290px;
+  text-align: center;
+}
+
+/* Logo */
+.hero-logo img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  /* background: #fff; */
+  padding: 10px;
+}
+
+/* Red nav buttons */
+.hero-nav-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+@keyframes shine {
+    0% { left: -120%; }
+    100% { left: 120%; }
+}
+.lux-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    background: #8B0000;
+    color: #ffffff !important;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none !important;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+.lux-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shine 2.5s linear infinite;
+}
+
+.lux-btn:hover {
+    background: #a60000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139,0,0,0.3);
+}
+
+
+/* Heading */
+.hero h1 {
+  margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  margin-top: 18px;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  opacity: 0.9;
+}
+
+/* Donate button */
+.donate-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  padding: 14px 28px;
+  background: #b71f23;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 3px;
+}
+.shape-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+/* ================= STATS STRIP ================= */
+
+.stats-strip {
+  position: relative;
+  margin-top: -210px; /* pulls it into hero like screenshot */
+  z-index: 5;
+}
+
+.stats-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 140px;
+  background: rgba(128, 27, 32, 0.92);
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  gap: 35px;
+}
+
+/* Image */
+.stats-image img {
+  width: 22rem;
+  height: 8.5rem;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* Text */
+.stats-text {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Button */
+.stats-btn {
+  display: inline-block;
+  padding: 12px 26px;
+  background: #ffffff;
+  color: #9b1c1f;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+/* ================= IMPACT SECTION ================= */
+
+.impact-section {
+  background: #f2eded;
+  padding: 120px 0;
+}
+
+.impact-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1.3fr 0.5fr;
+  align-items: center;
+  gap: 60px;
+}
+
+/* LEFT */
+.impact-tag {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.impact-text h2 {
+  margin-top: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.impact-text .highlight {
+  color: #9b1c1f;
+}
+
+.impact-text em {
+  font-style: italic;
+}
+
+.impact-desc {
+  margin: 25px 0;
+  max-width: 420px;
+  color: #333;
+}
+
+.impact-btn {
+  display: inline-block;
+  background: #9b1c1f;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* CENTER VISUAL */
+.impact-visual {
+  position: relative;
+}
+
+.main-image {
+  width: 24rem;
+  border-radius: 4px;
+}
+
+.side-image {
+  position: absolute;
+  right: -90px;
+  bottom: -40px;
+  width: 170px;
+  height: 350px;
+}
+
+/* TESTIMONIAL CARD */
+.testimonial-card {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 300px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transform: translateX(-350px); /* START POSITION */
+  transition: transform 0.1s linear;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.testimonial-card strong {
+  display: block;
+}
+
+.testimonial-card span {
+  font-size: 14px;
+  color: #777;
+}
+
+.dots {
+  margin-top: 15px;
+}
+
+.dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #bc1111;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.dot.active {
+  background: #070707;
+}
+
+/* RIGHT METRIC */
+.impact-metric {
+  color: #000;
+}
+.impact-metric h3 {
+  margin-top: -330px;
+  font-size: 48px;
+}
+
+.impact-metric p {
+  margin-top: 5px;
+}
+
+.impact-metric img {
+  margin-top: 20px;
+  width: 170px;
+}
+
+/* ================= WORLD CLASS CARE ================= */
+
+.care-section {
+  background: #9b1c1f;
+  padding: 140px 0;
+}
+
+.care-panel {
+  max-width: 1180px;
+  margin: 0 auto;
+  background: linear-gradient(
+    135deg,
+    #6f1417 0%,
+    #7c161a 50%,
+    #6a1316 100%
+  );
+  border-radius: 6px;
+  padding: 120px 100px;
+  position: relative;
+}
+
+/* Right-aligned content */
+.care-content {
+  max-width: 420px;
+  margin-left: auto;
+  color: #fff;
+}
+
+.care-logo {
+  width: 55px;
+  margin-bottom: 25px;
+}
+
+/* Heading */
+.care-content h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+.care-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.95;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.care-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #9b1c1f;
+  padding: 14px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+
+/* ================= DONATION + SERVICES ================= */
+
+.donation-services {
+  position: relative;
+  height: 900px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Parallax background layer */
+.parallax-bg {
+  position: absolute;
+  inset: 0;
+  background: url("../assets/parallax-bg.jpg") left center / cover no-repeat;
+  transform: translateY(0);
+  will-change: transform;
+  z-index: 1;
+}
+
+/* Content container */
+.ds-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  padding: 0 80px;
+  gap: 80px;
+}
+
+/* FORM CARD */
+.donation-card {
+  background: #f3eded;
+  padding: 50px 45px;
+  max-width: 420px;
+}
+
+.ds-tag {
+  color: #9b1c1f;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.donation-card h3 {
+  margin: 15px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: black;
+}
+
+.donation-card p {
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: black;
+}
+
+.donation-card .row {
+  display: flex;
+  gap: 15px;
+}
+
+.donation-card input,
+.donation-card textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d8bcbc;
+  margin-bottom: 15px;
+  font-size: 14px;
+  background: transparent;
+}
+
+.donation-card textarea {
+  height: 90px;
+  resize: none;
+}
+
+.donation-card button {
+  width: 100%;
+  padding: 14px;
+  background: #9b1c1f;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* SERVICES LIST */
+.services-list h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 44px;
+  margin-bottom: 40px;
+}
+
+.services-list ul {
+  list-style: none;
+}
+
+.services-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #e1dede;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.services-list .arrow {
+  font-size: 26px;
+}
+/* ================= SPECIALTY SECTION ================= */
+
+
+
+/* ================= SPECIALTY SECTION ================= */
+
+.specialty-section {
+  background: #9b1c1f;
+  padding: 120px 0;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.specialty-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 80px;
+  padding: 0 40px;
+  
+}
+
+/* LEFT CONTENT */
+
+.specialty-content {
+  max-width: 1200px;
+  margin: 0 auto;   
+  padding: 0 40px;
+}
+
+.specialty-content h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 46px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.specialty-content p {
+  margin: 20px 0 30px;
+  max-width: 420px;
+  color: #f2f2f2;
+}
+
+.read-btn {
+  display: inline-block;
+  background: #fff;
+  color: #9b1c1f;
+  padding: 12px 26px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* RIGHT IMAGES */
+.specialty-images {
+  position: relative;
+}
+
+.specialty-images img {
+  display: block;
+  width: 220px;
+  margin-bottom: 20px;
+}
+
+/* Tall static image */
+.static-img {
+  position: absolute;
+  right: -20%;
+  top: -10%;
+  width: 260px;
+  height: 520px;
+  image-rendering: optimizeQuality;
+}
+
+/* Moving images */
+.move-up {
+  transform: translateY(0);
+  will-change: transform;
+}
+/* ================= GLOBAL SECTION ================= */
+
+.global-section {
+  background: #ffffff url("../assets/world-map.png") center / cover no-repeat;
+  padding: 140px 0 160px;
+}
+
+.global-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+/* HEADER */
+.global-header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.global-tag {
+  display: inline-block;
+  font-size: 14px;
+  color: #9b1c1f;
+  margin-bottom: 15px;
+}
+
+.global-header h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 56px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* Underline effect */
+.underline {
+  position: relative;
+  color: #9b1c1f;
+  font-style: italic;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 4px;
+  background: #9b1c1f;
+  border-radius: 2px;
+}
+
+/* GRID */
+.global-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  column-gap: 80px;
+}
+
+/* CARDS */
+.global-card {
+  text-align: center;
+}
+
+.global-card img {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+/* Center image alignment */
+.global-card.center {
+  display: flex;
+  justify-content: center;
+}
+
+.global-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.global-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 300px;
+  margin: 0 auto;
+}
+/* ===== SECTION BASE ===== */
+
+.aaw-section {
+  background: #fff url("../assets/world-map.png") left center / contain no-repeat;
+  padding: 160px 0;
+}
+
+.aaw-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+/* ===== HEADER ===== */
+
+.aaw-header {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.aaw-tag {
+  color: #9b1c1f;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.aaw-header h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 56px;
+  line-height: 1.2;
+}
+
+.aaw-header span {
+  color: #9b1c1f;
+  font-style: italic;
+  position: relative;
+}
+
+.aaw-header span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 4px;
+  background: #9b1c1f;
+}
+
+/* ===== TIMELINE STRUCTURE ===== */
+
+   .bodyyy {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fcfcfc;
+            /* Optional: Add a subtle map background image here if you have one */
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1200px-World_map_-_low_resolution.svg.png');
+            background-size: cover;
+            background-blend-mode: overlay;
+            background-color: rgba(255, 255, 255, 0.92);
+            padding: 50px;
+            color: #333;
+        }
+
+        /* Timeline Container */
+        .timeline-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 0; /* Space for top and bottom elements */
+        }
+
+        /* The Central Horizontal Line */
+        .timeline-line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #666;
+            z-index: 0;
+        }
+
+        /* Individual Timeline Item */
+        .timeline-item {
+            flex: 1;
+            position: relative;
+            z-index: 1;
+            padding: 0 15px;
+            text-align: center;
+        }
+
+        /* Vertical Connector Lines */
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 1px;
+            height: 50px; /* Length of the stick connecting to line */
+            background-color: #666;
+            transform: translateX(-50%);
+        }
+
+        /* Specific positioning for Top vs Bottom items */
+        .item-top {
+            margin-bottom: 20px; /* Push it up relative to the line */
+            transform: translateY(-50%); /* Shift up to sit above line */
+        }
+        
+        .item-top::after {
+            bottom: -50px; /* Line goes down to center */
+        }
+
+        .item-bottom {
+            margin-top: 20px;
+            transform: translateY(50%); /* Shift down to sit below line */
+        }
+
+        .item-bottom::after {
+            top: -50px; /* Line goes up to center */
+        }
+
+        /* The Number Styling (01, 02, etc) */
+        .number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: transparent;
+            -webkit-text-stroke: 1px #a84a54; /* The red outline effect */
+            background-color: #fcfcfc; /* Hide the line behind the number */
+            display: inline-block;
+            padding: 0 10px;
+            margin: 10px 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Card Content Styling */
+        .content-card {
+            background: transparent;
+            text-align: center;
+        }
+
+        .content-card img {
+            width: 100%;
+            max-width: 200px; /* Adjust based on preference */
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+
+        .content-card h3 {
+            font-size: 1.1rem;
+            color: #000;
+            margin-bottom: 10px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .content-card p {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Specific layout tweaks to match image exactly */
+        
+        /* 01: Bottom Text Only */
+        .item-01 .content-card {
+            margin-top: 10px;
+        }
+
+        /* 02: Top Image + Text */
+        .item-02 {
+            display: flex;
+            flex-direction: column-reverse; /* Puts number at bottom near line */
+        }
+
+        /* 03: Bottom Image + Text */
+        .item-03 .content-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 04: Top Text + Image (No Image shown in text but layout implies it) */
+        .item-04 {
+             display: flex;
+            flex-direction: column-reverse;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .timeline-container {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .timeline-line {
+                width: 2px;
+                height: 100%;
+                left: 20px;
+                top: 0;
+            }
+            .timeline-item {
+                transform: none; /* Reset vertical shifts */
+                margin: 20px 0 20px 40px; /* Indent from the left line */
+                text-align: left;
+                width: 100%;
+            }
+            .timeline-item::after {
+                width: 20px;
+                height: 2px;
+                left: -30px; /* Connect to the left line */
+                top: 20px;
+            }
+            .item-top, .item-bottom {
+                margin: 0 0 40px 40px;
+            }
+            .item-02, .item-04 {
+                flex-direction: column;
+            }
+            .content-card {
+                text-align: left;
+            }
+            .content-card img {
+                margin: 0 auto 15px 0;
+            }
+        }
+
+ .bdy {
+            font-family: 'Poppins', sans-serif;
+            min-height: 200vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: #ffffff; */
+            /* background-image: url(./assets/world_map.svg); */
+            position: relative;
+            overflow-x: hidden;
+            color: #333;
+        }
+
+        /* --- Background Map Effect --- */
+        /* We use a pseudo-element to create the faded map background */
+        .bdy::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.08; /* Very subtle, like the watermark in your image */
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* --- Layout Container --- */
+        .container {
+            max-width: 1100px;
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+            padding: 40px 0;
+        }
+
+        /* --- Text Content Section (Left) --- */
+        .content-column {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            color: #000;
+        }
+
+        /* The specific red accent for "Are" */
+        h1 span.accent {
+            color: #a83232; /* Deep red matched from image */
+            font-style: italic; /* Added italic to match the stylistic flow */
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 35px;
+            font-weight: 400;
+        }
+
+        /* --- Button Styling --- */
+        .btn {
+            display: inline-block;
+            background-color: #a83232;
+            color: white;
+            padding: 12px 35px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(168, 50, 50, 0.2);
+        }
+
+        .btn:hover {
+            background-color: #8a2be2; /* Slight shift on hover */
+            background-color: #802020;
+        }
+
+        /* --- Image Section (Right) --- */
+        .image-column {
+            flex: 0 0 400px; /* Fixed width for image column */
+            position: relative;
+        }
+
+        .image-wrapper {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            height: 550px; /* Tall portrait height */
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* --- The "Medical Care" Vertical Badge --- */
+        .vertical-badge {
+            position: absolute;
+            top: 30%;
+            left: 0;
+            /* Flex column to stack icon and text */
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .badge-icon {
+            background: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            margin-bottom: 5px;
+        }
+
+        /* Using CSS shapes for the medical bag icon */
+        .icon-medical {
+            font-size: 20px;
+            color: #a83232;
+            font-weight: bold;
+        }
+
+        .badge-text {
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            /* Rotate text vertically */
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg); /* Flips it so it reads Top-to-Bottom correctly */
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Drop shadow for readability over image */
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
+            
+            .content-column {
+                max-width: 100%;
+            }
+
+            .image-column {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+
+
+        
+
+
+
+
+/* ===== TESTIMONIAL SECTION ===== */
+
+.testimonial-section {
+  background: #9b1c1f;
+  padding: 140px 0;
+  overflow: hidden;
+}
+
+.testimonial-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  align-items: center;
+  gap: 100px;
+}
+
+/* LEFT */
+.testimonial-left {
+  position: relative;
+  color: #fff;
+}
+
+.quote {
+  font-size: 46px;
+  padding-left: 8rem;
+  line-height: 1.35;
+  font-style: italic;
+  margin-bottom: 60px;
+}
+
+.arrow {
+  position: absolute;
+  top: 45%;
+  font-size: 32px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.arrow.left { left: -40px; }
+.arrow.right { right: -40px; }
+
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.author strong {
+  font-size: 16px;
+}
+
+.author span {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.dots {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.dots span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: rgba(255,255,255,0.4);
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.dots .active {
+  background: #fff;
+}
+
+/* RIGHT IMAGES */
+.testimonial-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.img-col {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  will-change: transform;
+}
+
+.img-col img {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+
+
+
+
+
+/* ===========================================
+   NEWS ROOM / BLOG GRID
+   =========================================== */
+
+.news-room-section {
+    padding: 5rem 2rem;
+    background: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-label {
+    color: #0066cc;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.news-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    color: #1a1a1a;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.blog-item {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.blog-item.blog-item-large {
+    grid-column: span 3;
+    height: 380px;
+}
+
+.blog-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.blog-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    transition: background 0.6s ease;
+}
+
+.blog-item:hover img {
+    transform: scale(1.05);
+}
+
+.blog-item:hover .blog-overlay {
+    background: rgba(0,0,0,0.2);
+}
+
+.blog-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    color: #ffffff;
+    z-index: 10;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.blog-date {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.blog-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* ===========================================
+   FOOTER
+   =========================================== */
+
+.site-footer {
+    background: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 1rem;
+}
