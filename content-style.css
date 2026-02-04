@@ -1,0 +1,364 @@
+/* ============================================
+   CONTENT PAGE STYLES
+   ============================================ */
+
+/* Content Hero Section */
+.content-hero {
+  background: linear-gradient(135deg, #9b1c1f 0%, #6f1417 100%);
+  padding: 80px 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.content-hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content-hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.content-subtitle {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 20px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+.content-hero h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 30px 0 25px;
+  line-height: 1.3;
+}
+
+.content-description {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-donate-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #9b1c1f;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content-donate-btn:hover {
+  background: #f5f5f5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Gallery */
+.content-gallery {
+  background: #f3efec;
+  padding: 60px 20px;
+}
+
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Latest Insights Section */
+.latest-insights {
+  background: #ffffff;
+  padding: 80px 20px;
+}
+
+.insights-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.insights-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.insights-subtitle {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Insight Card */
+.insight-card {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e5e5;
+}
+
+.insight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.insight-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.insight-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.insight-card:hover .insight-image img {
+  transform: scale(1.08);
+}
+
+.insight-content {
+  padding: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.insight-content h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.insight-content p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+.read-more {
+  display: inline-block;
+  color: #9b1c1f;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.read-more::after {
+  content: ' →';
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.read-more:hover {
+  color: #7a1518;
+}
+
+.read-more:hover::after {
+  transform: translateX(5px);
+}
+
+/* Responsive Styles for Content Page */
+@media (max-width: 1024px) {
+  .insights-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .content-hero {
+    padding: 60px 20px;
+  }
+
+  .content-hero h1 {
+    font-size: 36px;
+  }
+
+  .content-hero h2 {
+    font-size: 24px;
+  }
+
+  .content-subtitle {
+    font-size: 14px;
+    padding: 6px 16px;
+  }
+
+  .content-description {
+    font-size: 15px;
+  }
+
+  .content-donate-btn {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .gallery-item img {
+    height: 180px;
+  }
+
+  .latest-insights {
+    padding: 60px 20px;
+  }
+
+  .insights-title {
+    font-size: 32px;
+  }
+
+  .insights-subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .insights-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .insight-image {
+    height: 200px;
+  }
+
+  .insight-content {
+    padding: 20px;
+  }
+
+  .insight-content h3 {
+    font-size: 18px;
+  }
+
+  .insight-content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-hero  {
+    padding-top: 160px;
+  }
+   .content-hero h1 {
+    font-size: 28px;
+  }
+
+
+  .content-hero h2 {
+    font-size: 20px;
+  }
+
+  .content-description {
+    font-size: 14px;
+  }
+
+  .gallery-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .gallery-item img {
+    height: 220px;
+  }
+
+  .insights-title {
+    font-size: 26px;
+  }
+
+  .insights-subtitle {
+    font-size: 14px;
+  }
+
+  .insight-image {
+    height: 180px;
+  }
+
+  .insight-content {
+    padding: 18px;
+  }
+
+  .insight-content h3 {
+    font-size: 16px;
+  }
+
+  .insight-content p {
+    font-size: 13px;
+  }
+}

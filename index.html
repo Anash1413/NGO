@@ -14,7 +14,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>NGO Hero Layout</title>
-  <meta name="viewport" content="width=1440">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 
@@ -29,9 +30,9 @@
   <header class="site-header">
     <nav class="nav-container">
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Content</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="content.html">Content</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
   </header>
@@ -51,9 +52,9 @@
         <a class="lux-btn" href="#">Contact Us</a>
       </div>
 
-      <h1>Cutting-Edge Medicine and<br>Advocacy</h1>
+      <h1 style="color: white;">Cutting-Edge Medicine and<br>Advocacy</h1>
 
-      <p class="hero-subtitle">REGARDLESS OF ABILITY TO PAY</p>
+      <p style="color: white;" class="hero-subtitle">REGARDLESS OF ABILITY TO PAY</p>
 
       <a href="#" class="donate-btn">
         <span>Donate Now</span>
@@ -190,7 +191,7 @@
     </div>
 
     <!-- SERVICES LIST -->
-    <div class="services-list">
+    <div style="color: white;" class="services-list">
       <h2>Asian AIDS<br>Action services</h2>
 
       <ul>
@@ -431,7 +432,62 @@
 
     <!-- FOOTER -->
     <footer id="site-footer" class="site-footer">
-        <p>&copy; All rights reserved</p>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Asian AIDS Action is dedicated to providing cutting-edge medicine and advocacy regardless of ability to pay. We serve 2.5M+ patients across 50 countries.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="content.html">Content</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Our Mission</h3>
+                <p>To expand access to HIV care, testing, treatment & prevention programs across the world, ensuring no one is left behind.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Get Involved</h3>
+                <ul>
+                    <li><a href="#donate">Donate Now</a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
+                    <li><a href="#partners">Partner With Us</a></li>
+                    <li><a href="#subscribe">Subscribe to Updates</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: <a href="mailto:info@asianaidaction.org">info@asianaidaction.org</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                <p>Address: 123 Hope Street, Global City, GC 12345</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#facebook" title="Facebook">Facebook</a>
+                    <a href="#twitter" title="Twitter">Twitter</a>
+                    <a href="#instagram" title="Instagram">Instagram</a>
+                    <a href="#linkedin" title="LinkedIn">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Asian AIDS Action. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#sitemap">Sitemap</a>
+            </div>
+        </div>
     </footer>
 
 

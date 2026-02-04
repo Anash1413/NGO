@@ -5,6 +5,7 @@
 }
 
 body {
+  position: relative;
   font-family: 'Inter', sans-serif;
   background-color: #f3efec;
    background-image: 
@@ -17,6 +18,8 @@ body {
   width: 100%;
   height: 70px;
   background: #ffffff;
+   position: fixed;
+   z-index: 1000;
 }
 
 .nav-container {
@@ -27,6 +30,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding-right: 60px;
+  position: sticky;
 }
 
 .nav-links {
@@ -208,7 +212,7 @@ body {
 
 .impact-section {
   background: #f2eded;
-  padding: 120px 0;
+  padding: 120px 100px;
 }
 
 .impact-container {
