@@ -20,11 +20,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
+
+  <!-- STARTUP ANIMATION OVERLAY -->
+  <div id="startupOverlay" class="startup-overlay">
+    <video id="startupVideo" class="startup-video" autoplay muted playsinline>
+      <source src="assets/video/start_Animation.mp4" type="video/mp4">
+    </video>
+  </div>
 
   <!-- HEADER -->
   <header class="site-header">
@@ -137,6 +147,10 @@
 <!-- WORLD CLASS CARE SECTION -->
 <section class="care-section">
   <div class="care-panel">
+    <video class="care-video" autoplay muted loop playsinline>
+      <source src="assets/video/HIV_Aid_Video_Creation.mp4" type="video/mp4">
+    </video>
+    <div class="care-overlay"></div>
 
     <div class="care-content">
       <img src="assets/logoS.png" alt="Asian AIDS Action" class="care-logo">
@@ -146,7 +160,7 @@
         & Primary Care
       </h2>
 
-      <p style="color: wh;">
+      <p style="color: white;">
         Asian AIDS Action provides life-saving HIV testing,
         treatment, prevention tools, and essential healthcare
         support for millions worldwide.
@@ -311,14 +325,6 @@
 <section class="bdy">
 
     <section class="container">
-        <div class="content-column">
-            <h1>Who we <span class="accent">Are</span></h1>
-            <p>
-                The Los Angeles-based AIDS Healthcare Foundation (Asian AIDS Action) is a global nonprofit organization providing cutting-edge medicine and advocacy to millions worldwide. We are currently the largest provider of HIV/AIDS medical care in the world.
-            </p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-
         <div class="image-column">
             <div class="image-wrapper">
                 <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Doctor examining patient">
@@ -330,6 +336,14 @@
                 </div>
             </div>
         </div>
+
+        <div class="content-column">
+            <h1>Who we <span class="accent">Are</span></h1>
+            <p>
+                The Los Angeles-based AIDS Healthcare Foundation (Asian AIDS Action) is a global nonprofit organization providing cutting-edge medicine and advocacy to millions worldwide. We are currently the largest provider of HIV/AIDS medical care in the world.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
     </section>
 
 </section>
@@ -340,26 +354,26 @@
 
     <!-- LEFT CONTENT -->
     <div class="testimonial-left">
-      <p style="color: white;" class="quote">
+      <p style="color: white;" class="quote" id="testimonialQuote">
         Helping others<br>
         is the most<br>
         rewarding<br>
         feeling
       </p>
 
-      <div class="arrow left">‹</div>
-      <div class="arrow right">›</div>
+      <div class="arrow left" id="prevTestimonial">‹</div>
+      <div class="arrow right" id="nextTestimonial">›</div>
 
       <div class="author">
-        <img src="assets/avatar.jpg" alt="Michael Stevens">
-        <strong>Michael Stevens</strong>
-        <span>New York</span>
+        <img id="testimonialImage" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Stevens">
+        <strong id="testimonialName">Michael Stevens</strong>
+        <span id="testimonialLocation">New York</span>
       </div>
 
-      <div class="dots">
-        <span></span>
-        <span class="active"></span>
-        <span></span>
+      <div class="dots" id="testimonialDots">
+        <span class="active" data-index="0"></span>
+        <span data-index="1"></span>
+        <span data-index="2"></span>
       </div>
     </div>
 
@@ -368,14 +382,14 @@
 
       <!-- LEFT COLUMN (MOVES UP) -->
       <div class="img-col move-up">
-        <img src="assets/img-1.jpg" alt="">
-        <img src="assets/img-2.jpg" alt="">
+        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400" alt="Healthcare">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400" alt="Medical">
       </div>
 
       <!-- RIGHT COLUMN (MOVES DOWN) -->
       <div class="img-col move-down">
-        <img src="assets/img-3.jpg" alt="">
-        <img src="assets/img-4.jpg" alt="">
+        <img src="https://images.unsplash.com/photo-1578496781379-7dcfb995293d?w=400" alt="Care">
+        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400" alt="Support">
       </div>
 
     </div>
@@ -472,10 +486,10 @@
             <div class="footer-section">
                 <h3>Follow Us</h3>
                 <div class="social-links">
-                    <a href="#facebook" title="Facebook">Facebook</a>
-                    <a href="#twitter" title="Twitter">Twitter</a>
-                    <a href="#instagram" title="Instagram">Instagram</a>
-                    <a href="#linkedin" title="LinkedIn">LinkedIn</a>
+                    <a href="#facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
